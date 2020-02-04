@@ -67,6 +67,7 @@
         promise--on-handle nil
         promise--on-reject nil))
 
+;;;###autoload
 (defun promise-rejection-tracking-enable (&optional options)
   (when promise--enabled (promise-rejection-tracking-disable))
   (setf promise--enabled t)
